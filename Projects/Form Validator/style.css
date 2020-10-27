@@ -3,6 +3,8 @@
 :root {
   --success-color: #2ecc71;
   --error-color: #e74c3c;
+  --gray-color: #3c4858;
+  --light-gray-color: #8392a5;
 }
 
 * {
@@ -10,7 +12,7 @@
 }
 
 body {
-  background-color: #f9f8fb;
+  background-color: var(--gray-color);
   font-family: 'Open Sans', sans-serif;
   display: flex;
   align-items: center;
@@ -83,8 +85,8 @@ h2 {
 
 .form button {
   cursor: pointer;
-  background-color: #3498db;
-  border: 2px solid #3498db;
+  background-color: var(--gray-color);
+  border: 0px solid;
   border-radius: 4px;
   color: #fff;
   display: block;
@@ -92,4 +94,11 @@ h2 {
   padding: 10px;
   margin-top: 20px;
   width: 100%;
+}
+
+.form button:hover {
+  background-color: var(--success-color);
+}
+.form button:focus {
+  outline: 0;
 }
