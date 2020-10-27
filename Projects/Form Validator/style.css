@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
-  --success-color: #2ecc71;
-  --error-color: #e74c3c;
+  --success-color: #16e07d;
+  --error-color: #fe4963;
   --gray-color: #3c4858;
-  --light-gray-color: #8392a5;
+  --dark-gray-color: #1f262e;
+  --medium-gray-color: #8392a5;
+  --light-gray-color: #ecf1fa;
 }
 
 * {
@@ -12,7 +14,7 @@
 }
 
 body {
-  background-color: var(--gray-color);
+  background-color: var(--dark-gray-color);
   font-family: 'Open Sans', sans-serif;
   display: flex;
   align-items: center;
@@ -29,6 +31,7 @@ body {
 }
 
 h2 {
+  color: var(--dark-gray-color);
   text-align: center;
   margin: 0 0 20px;
 }
@@ -44,13 +47,13 @@ h2 {
 }
 
 .form-control label {
-  color: #777;
+  color: var(--dark-gray-color);
   display: block;
   margin-bottom: 5px;
 }
 
 .form-control input {
-  border: 2px solid #f0f0f0;
+  border: 2px solid var(--light-gray-color);
   border-radius: 4px;
   display: block;
   width: 100%;
@@ -58,9 +61,13 @@ h2 {
   font-size: 14px;
 }
 
+::placeholder {
+  color: var(--medium-gray-color);
+}
+
 .form-control input:focus {
   outline: 0;
-  border-color: #777;
+  border-color: var(--medium-gray-color);
 }
 
 .form-control.success input {
@@ -85,10 +92,10 @@ h2 {
 
 .form button {
   cursor: pointer;
-  background-color: var(--gray-color);
+  background-color: var(--dark-gray-color);
   border: 0px solid;
   border-radius: 4px;
-  color: #fff;
+  color: white;
   display: block;
   font-size: 16px;
   padding: 10px;
@@ -97,7 +104,7 @@ h2 {
 }
 
 .form button:hover {
-  background-color: var(--success-color);
+  background-color: var(--gray-color);
 }
 .form button:focus {
   outline: 0;
