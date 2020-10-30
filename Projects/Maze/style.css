@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+h1 {
+  color: #16e07d;
+  font-size: 64px;
+  font-family: sans-serif;
+}
+
+#winner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.button {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 100px;
+  outline-style: none;
+  background-color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #1f262e;
+  outline: none;
+  text-decoration: none;
+}
