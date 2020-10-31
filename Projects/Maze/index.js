@@ -2,8 +2,8 @@ const { Engine, Render, Runner, World, Bodies, Body, Events } = Matter;
 
 // Constants
 
-const cellsX = 6;
-const cellsY = 6;
+const cellsX = 24;
+const cellsY = 16;
 const width = window.innerWidth - 4;
 const height = window.innerHeight - 4;
 
@@ -150,7 +150,7 @@ horizontals.forEach((row, rowIndex) => {
         isStatic: true,
         label: 'wall',
         render: {
-          fillStyle: 'white',
+          fillStyle: 'gray',
         },
       },
     );
@@ -172,7 +172,7 @@ verticals.forEach((row, rowIndex) => {
         isStatic: true,
         label: 'wall',
         render: {
-          fillStyle: 'white',
+          fillStyle: 'gray',
         },
       },
     );
