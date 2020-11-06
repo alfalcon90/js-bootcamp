@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+  --green-color: #16e07d;
+  --red-color: #fe4963;
+  --light-red-color: #ffc7cf;
+  --gray-color: #3c4858;
+  --dark-gray-color: #1f262e;
+  --medium-gray-color: #8392a5;
+  --light-gray-color: #ecf1fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: var(--dark-gray-color);
+}
+
+.draggable-list {
+  border: 1px solid var(--light-gray-color);
+  padding: 0;
+  list-style-type: none;
+}
+
+.draggable-list li {
+  display: flex;
+  flex: 1;
+  background-color: white;
+}
+
+.draggable-list li:not(:last-of-type) {
+  border-bottom: 1px solid var(--light-gray-color);
+}
+
+.draggable-list .number {
+  background-color: var(--light-gray-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  height: 56px;
+  width: 56px;
+}
+
+.draggable-list li.over .draggable {
+  background-color: var(--light-gray-color);
+}
+
+.draggable-list .person-name {
+  margin: 0 24px 0 0;
+}
+
+.draggable-list li.right .person-name {
+  color: var(--green-color);
+}
+
+.draggable-list li.wrong .person-name {
+  color: var(--red-color);
+}
+
+.draggable {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  flex: 1;
+}
+
+.check-btn {
+  background-color: var(--dark-gray-color);
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.check-btn i {
+  margin-right: 12px;
+}
+
+.check-btn:active {
+  transform: scale(0.9);
+}
+
+.check-btn:focus {
+  outline: none;
+}
