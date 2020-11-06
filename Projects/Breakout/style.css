@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+  --green-color: #16e07d;
+  --red-color: #fe4963;
+  --gray-color: #3c4858;
+  --dark-gray-color: #1f262e;
+  --medium-gray-color: #8392a5;
+  --light-gray-color: #ecf1fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--green-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  margin: 0%;
+}
+
+h1 {
+  font-size: 44px;
+  color: var(--dark-gray-color);
+}
+
+canvas {
+  background: white;
+  border-radius: 16px;
+}
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  padding: 12px 24px;
+  background: black;
+  color: white;
+  border-radius: 4px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+.btn:hover {
+  background: black;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.rules-btn {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+}
+
+.rules {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--dark-gray-color);
+  color: white;
+  min-height: 100vh;
+  width: 400px;
+  padding: 24px;
+  line-height: 1.5;
+  transform: translateX(-400px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.rules.show {
+  transform: translateX(0px);
+}
