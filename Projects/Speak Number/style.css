@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+  --green-color: #16e07d;
+  --red-color: #fe4963;
+  --light-red-color: #ffe5e9;
+  --gray-color: #3c4858;
+  --dark-gray-color: #1f262e;
+  --medium-gray-color: #8392a5;
+  --light-gray-color: #ecf1fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--dark-gray-color) url('img/bg.jpg') no-repeat left
+    center/cover;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+h1,
+h3 {
+  margin-bottom: 0;
+}
+
+p {
+  line-height: 1.5;
+  margin: 0;
+}
+
+.play-again {
+  padding: 8px 16px;
+  border: 0;
+  background: var(--light-gray-color);
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+.msg {
+  font-size: 1.5em;
+  margin-top: 40px;
+}
+
+.box {
+  border: 2px solid var(--gray-color);
+  display: inline-block;
+  font-size: 32px;
+  margin: 24px;
+  padding: 12px;
+  border-radius: 8px;
+}
